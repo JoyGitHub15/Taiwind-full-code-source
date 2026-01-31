@@ -209,6 +209,66 @@
   .table {
     display: table;
   }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
+  .w-0\.5 {
+    width: calc(var(--spacing) * 0.5);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-\[2px\] {
+    width: 2px;
+  }
+  .w-\[2rem\] {
+    width: 2rem;
+  }
+  .w-\[5px\] {
+    width: 5px;
+  }
+  .w-\[5rem\] {
+    width: 5rem;
+  }
+  .w-\[10rem\] {
+    width: 10rem;
+  }
+  .w-\[15rem\] {
+    width: 15rem;
+  }
+  .w-\[20rem\] {
+    width: 20rem;
+  }
+  .w-\[rem\] {
+    width: rem;
+  }
+  .max-w-0 {
+    max-width: calc(var(--spacing) * 0);
+  }
+  .max-w-0\.5 {
+    max-width: calc(var(--spacing) * 0.5);
+  }
+  .max-w-1 {
+    max-width: calc(var(--spacing) * 1);
+  }
+  .max-w-1\.5 {
+    max-width: calc(var(--spacing) * 1.5);
+  }
+  .max-w-2 {
+    max-width: calc(var(--spacing) * 2);
+  }
+  .max-w-10 {
+    max-width: calc(var(--spacing) * 10);
+  }
+  .max-w-10\/12 {
+    max-width: calc(10/12 * 100%);
+  }
+  .max-w-\[10rem\] {
+    max-width: 10rem;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -246,6 +306,15 @@
   .border-lime-300 {
     border-color: var(--color-lime-300);
   }
+  .bg-\[\,\] {
+    background-color: ,;
+  }
+  .bg-\[\<\>\] {
+    background-color: <>;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
@@ -269,6 +338,42 @@
   }
   .bg-pink-400 {
     background-color: var(--color-pink-400);
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\/bg-img\)\] {
+    background-image: url(/bg-img);
+  }
+  .bg-\[url\(\/img\/mountains\.jpg\)\] {
+    background-image: url(/img/mountains.jpg);
+  }
+  .bg-\[url\(bg-ima\)\] {
+    background-image: url(bg-ima);
+  }
+  .bg-\[url\(bg-img\)\] {
+    background-image: url(bg-img);
+  }
+  .bg-\[url\(i\)\] {
+    background-image: url(i);
+  }
+  .bg-\[url\(img\)\] {
+    background-image: url(img);
+  }
+  .bg-\[url\(img-\)\] {
+    background-image: url(img-);
+  }
+  .bg-\[url\(lo\)\] {
+    background-image: url(lo);
+  }
+  .bg-\[url\(log\)\] {
+    background-image: url(log);
+  }
+  .bg-\[url\(logo\)\] {
+    background-image: url(logo);
+  }
+  .bg-\[url\(logo-\)\] {
+    background-image: url(logo-);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
