@@ -6,7 +6,7 @@
   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="output02.css">
+  <link rel="stylesheet" href="output03.css">
   <title>2nd project with tailwind</title>
 </head>
 <body>
@@ -14,30 +14,95 @@
   <header>
  
 
-        <section>
+        <section class=" width-[100%] flex justify-between items-center  my-3 px-4 py-2 bg-gray-300 z-10 ">
 
 
           <div class="flex items-center gap-4">
-         <img src="images/asset 0.png" alt="logo">
-        <h1>My Website</h1>
+         <img class="w-20 animate-pulse duration-100 hover:animate-none hover:text-blue-600 " src="images/asset 0.png" alt="logo">
+        <span class="text-blue-400 text-3xl font-bold hover:text-blue-600">my website</span>
        </div>
 
-       <div class="">
-      <nav class="">
-        <ul class="flex">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">SERVICES</a></li>
-          <li><a href="">PORTFOLIO</a></li>
-          <li><a href="">CONTACT</a></li>
-        </ul>
+      
+      <nav class=" hidden lg:block ">
+        <ul class="list-none flex justify-between gap-4 ">
+          <li><a class=" hover:bg-gray-200 px-4 py-2 rounded-2xl block font-bold hover:text-blue-700 " href="">HOME</a></li>
+          <li><a class=" hover:bg-gray-200 px-4 py-2 rounded-2xl block font-bold hover:text-blue-700 " href="">ABOUT</a></li>
+          <li><a class=" hover:bg-gray-200 px-4 py-2 rounded-2xl block font-bold hover:text-blue-700 " href="">SERVICES</a></li>
+          <li><a class=" hover:bg-gray-200 px-4 py-2 rounded-2xl block font-bold hover:text-blue-700 " href="">PORTFOLIO</a></li>
+          <li><a class=" hover:bg-gray-200 px-4 py-2 rounded-2xl block font-bold hover:text-blue-700 " href="">CONTACT</a></li>
+         
+        </ul>     
       </nav>
 
+
+<div class="hidden lg:flex gap-2 items-center">
+
+<input class=" hover:text-gray-400  hover:bg-gray-100 border-2 border-gray-200 py-3 px-2 rounded-2xl" type="text" placeholder="Search Here" >
+
+<button class="border-2 border-gray-200  hover:border-blue-600 hover:bg-blue-600 hover:text-white py-1 px-2 font-jost" >Search</button>
+
 </div>
+
+<button class="hidden lg:block text-blue-400 text-2xl hover:text-blue-600">
+  <a href="">Login</a>
+</button>
+
+    <button onclick="openMenu()" class="lg:hidden block">
+      <i class="fa-solid fa-bars text-white hover:text-gray-100 text-2xl"></i>
+    </button>
 
         </section>
 
   </header>
+  <!-- Mobile Sidebar -->
+<div id="sidebar"
+ class="fixed top-26 left-0  w-100 h-200 bg-gray-300 shadow-lg 
+ transform -translate-x-full transition-transform duration-300 z-50  ">
+
+     <!-- <div class="flex items-center justify-between gap-4 ">
+      <div class="flex items-center gap-4">
+           <img class="w-20 ml-3 animate-pulse duration-1000 hover:animate-none hover:text-blue-600 " src="images/asset 0.png" alt="logo">
+        <span class="text-blue-400 text-3xl font-bold hover:text-blue-600">my website</span>
+      </div>
+        <div class=" flex justify-end  ">
+      <button onclick="closeMenu()" class="text-3xl text-white hover:text-red-500 p-2 mx-3 ">x</button>
+</div>
+
+
+       </div> -->
+          <div class=" flex justify-end  ">
+      <button onclick="closeMenu()" class="text-3xl text-white hover:text-red-500 top-0 px-2 mx-2 my-2">x</button>
+</div>
+    
+
+
+
+  <ul class="flex flex-col p-2 gap-2 font-jost  ">
+    <li><a class="hover:bg-gray-200 px-4 py-2 block font-bold hover:text-blue-700" href="#">HOME</a></li>
+    <li><a class="hover:bg-gray-200 px-4 py-2 block font-bold hover:text-blue-700" href="#">ABOUT</a></li>
+    <li><a class="hover:bg-gray-200 px-4 py-2 block font-bold hover:text-blue-700" href="#">SERVICES</a></li>
+    <li><a class="hover:bg-gray-200 px-4 py-2 block font-bold hover:text-blue-700" href="#">PORTFOLIO</a></li>
+    <li><a class="hover:bg-gray-200 px-4 py-2 block font-bold hover:text-blue-700" href="#">CONTACT</a></li>
+  </ul>
+
+
+  <div class="flex gap-2 items-center">
+
+<input class=" hover:text-gray-400  hover:bg-gray-100 border-2 border-gray-200 py-3 px-2 rounded-2xl" type="text" placeholder="Search Here" >
+
+<button class="border-2 border-gray-200  hover:border-blue-600 hover:bg-blue-600 hover:text-white py-1 px-2 font-jost" >Search</button>
+
+</div>
+
+  <button class="text-blue-400 text-2xl hover:text-blue-600 mx-5 my-5">
+  <a href="">Login</a>
+</button>
+  
+
+</div>
+
+
+<script src="javascript03.js"></script>
   
 </body>
 </html>
