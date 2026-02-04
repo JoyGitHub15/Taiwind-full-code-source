@@ -3,9 +3,18 @@
 
 
 @import "tailwindcss";
-@theme{
-  --color-primary:#ee0181;
+
+/* @theme{ 
+  --color-primary:#ee0181; 
   --font-family-base: 'Poppins',sans-serif;
+ } */
+
+@layer base {
+  :root {
+    --color-primary: #ee0181;
+    --font-family-base: 'Poppins', sans-serif;
+  }
 }
+
 
 
