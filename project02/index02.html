@@ -12,31 +12,33 @@
 </head>
 <body>
 
-<header >
-  <section class="flex justify-between items-center px-3 bg-gray-200 shadow-lg shadow-gray-400">
+<header class="sticky top-0 z-50">
+  <!-- navbar Start -->
+  <section class="flex justify-between items-center px-3 bg-gray-200 ">
 
+    <!-- Icon menu -->
     <div class="flex items-center space-x-2" >
       <img src="images/asset 11.png" alt="">
-    <span class=" text-2xl text-primary font-bold cursor-pointer shadow-md shadow-primary">New Project</span>
+    <span class=" text-4xl text-blue-600 font-bold cursor-pointer">New Project</span>
   </div>
 
-
+<!-- Normal navbar list -->
     <nav class="hidden lg:block">
       <ul class="list-none flex gap-3" >
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Home</a></li>
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">About</a></li>
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Services</a></li>
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Portfolio</a></li>
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Blog</a></li>
-        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Contact</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100" href="">Home</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100" href="">About</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100" href="">Services</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100"href="">Portfolio</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100" href="">Blog</a></li>
+        <li><a class="font-bold px-4 py-3 hover:text-blue-500 rounded-2xl hover:bg-gray-100" href="">Contact</a></li>
       </ul>
     </nav>
 
-
-     <button class="hidden lg:flex items-center gap-2  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary hover:animate-none ">
-      <img class="animate-pulse  " src="images/asset 1.svg" alt="Icon">
+<!-- Normal Button -->
+     <button class="hidden lg:flex items-center gap-2  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary">
+      <img class="animate-pulse" src="images/asset 1.svg" alt="Icon">
       <span class="text-blue-600 font-bold">Electron Developer</span>
-      <i class="fa-solid fa-arrow-right "></i>
+      <i class="fa-solid fa-arrow-right text-gray-950"></i>
     </button>
 
 
@@ -45,53 +47,97 @@
     </button>
 
   </section>
+  <!-- Normal navbar End -->
 
-</header>
-<div id="sidebar"
- class="fixed top-25 left-0  w-100 h-200 bg-gray-300 
+
+  <!-- mobile sidebar section Start -->
+
+  <section id="sidebar"
+ class="fixed top-24 left-0  w-full h-full bg-gray-300 
  transform -translate-x-full transition-transform duration-300 lg:hidden shadow-2xl shadow-gray-400  ">
 
 
-  
-    <div class=" flex justify-end  ">
-      <button onclick="closeMenu()" class="text-3xl text-white hover:text-red-500 top-0 px-2 mx-2 my-2">x</button> </div>
+  <!-- sidebar close menu -->
+    <div class=" flex justify-end   ">
+      <button onclick="closeMenu()" class="text-3xl px-2 mx-2 my-2 text-gray-100 hover:bg-red-500   hover:-translate-x-1 hover:-translate-y-1 transition duration-600 ">
+        <i class="fa-solid fa-xmark"></i>
+  </button> 
+</div>
 
 
-  <nav class=" ">
+<!-- sidebar navbar list -->
+  <nav>
       <ul class="list-none flex flex-col gap-3 " >
        
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Home</a></li>
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">About</a></li>
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Services</a></li>
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Portfolio</a></li>
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Blog</a></li>
-        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Contact</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">Home</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">About</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">Services</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">Portfolio</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">Blog</a></li>
+        <li><a class="font-bold block px-4 py-2 rounded-2xl hover:translate-x-2 hover:-translate-y-1 transition duration-600 hover:text-blue-500 hover:bg-gray-100  "href="">Contact</a></li>
       </ul>
     </nav>
 
-    <hr>
+    <!-- sidebar verticale mark  -->
+    <hr class="my-4 border-gray-400">
 
-
-    <button class="flex items-center gap-2 my-5  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary ">
+<!-- sidebar button menu -->
+    <button class="flex items-center gap-2 my-5  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary hover:translate-x-2 hover:-translate-y-1 transition duration-500 ">
       <img class=" " src="images/asset 1.svg" alt="Icon">
       <span class="text-blue-600 font-bold">Electron Developer</span>
      
     </button>
 
-</div>
+  </section>
+  <!-- Mobile navbar End -->
+
+
+</header>
+
 <!-- Navbar End  -->
 
 
+<!-- MAIN MENU START -->
 
-<main>
-
-
-  
+<main >
 
 
+<!-- hero section -->
+ <div id="hero" class=" min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent ">
 
+  <div id="hero-container" class=" max-w-4xl mx-auto px-6 pb-32 items-center flex flex-col">
+
+    <div id="version-text" class=" mt-16 flex py-1 px-2  my-6 gap-2 items-center w-fit border border-yellow-300 rounded-lg bg-yellow-50 hover:-translate-y-1 transition duration-500 group shadow-lg hover:shadow-yellow-600">
+      <div class="w-2 h-2 bg-yellow-400 rounded-full border border-amber-600"></div>
+      <p class="flex items-center gap-2 font-jost font-medium text-yellow-600 mx-1 ">
+      v0.21.1:<span class="text-yellow-800 font-bold font-jost"> Find-in-page bug fixes</span>
+      <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-2 transition duration-500"></i>
+     </p>
+   
+    </div>
+
+    
+       <div class="flex flex-col gap-5 text-sm text-gray-500 font-jost sm:flex-row">
+      <p class="flex items-center gap-2 justify-center hover:-translate-y-1 hover:-translate-x-1 transition duration-500"> <i class="fa-regular fa-file-code text-2xl"></i> <span class="text-yellow-400 font-bold text-lg">Code Optiona</span></p>
+
+      <p class="flex items-center gap-2 justify-center hover:-translate-y-1 transition duration-500"> <i class="fa-solid fa-hand-back-fist text-2xl"></i><span class="text-yellow-400 font-bold text-lg">Drag & drop builder</span></p>
+      <p class="flex items-center gap-2 justify-center hover:-translate-y-1 hover:translate-x-1  transition duration-500"><i class="fa-solid fa-laptop text-2xl"></i><span class="text-yellow-400 font-bold text-lg">Windows, Mac, Linux</span></p>
+     </div>
+    
+
+    <h1 class="sm:text-7xl text-4xl text-center font-bold font-jost mt-5 mb-5">Web app to desktop <br> app in minutes</h1>
+    <p class="sm:text-3xl text-gray-800  font-bold sm:font-jost mt-2 mb-5 sm:font-medium sm:text-gray-500 text-center">Take your web app codebase and transform it into a <br> cross platform desktop app with native functionality.</p>
+    <div id="buttons-container" class="flex flex-col sm:flex-row gap-5 mt-12 items-center justify-center">
+      <button class="text-white bg-blue-700 py-3 px-8 font-medium rounded-lg hover:bg-blue-600 hover:-translate-y-1 transition hover:shadow-lg duration-400 hover:shadow-blue-600">Download now</button>
+      <button class="border border-gray-400 px-8 py-3 font-medium font-jost hover:border-gray-900 rounded-lg bg-white hover:-translate-y-1 transition duration-400 hover:bg-green-600 hover:text-white hover:shadow-lg hover:shadow-green-500">Read Docs</button>
+    </div>
+  </div>
+
+
+ </div>
 
 </main>
+
 
   
 

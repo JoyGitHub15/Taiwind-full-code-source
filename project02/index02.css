@@ -4,14 +4,27 @@
 
 @import "tailwindcss";
 
-/* @theme{ 
-  --color-primary:#ee0181; 
-  --font-family-base: 'Poppins',sans-serif;
- } */
+
+
+/* extend: {
+  maxWidth: {
+    container: '1200px'
+  }
+} */
+
+
+@theme {
+  --color-primary: theme(colors.gray.100);
+  --font-family-jost: 'Poppins',sans-serif;
+  --font-family-jost1: 'Inter', sans-serif;
+  --max-width-full_width:auto;
+  --color-secondary: gradient-to-br;
+}
+
 
 /* @layer base {
   :root {
-    --color-primary: #ee0181;
+    --color-primary: theme(colors.gray.100);
     --font-family-base: 'Poppins', sans-serif;
   }
 } */
