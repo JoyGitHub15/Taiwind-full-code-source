@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="output02.css">
+</head>
+<body>
+
+<header >
+  <section class="flex justify-between items-center px-3 bg-gray-200 shadow-lg shadow-gray-400">
+
+    <div class="flex items-center space-x-2" >
+      <img src="images/asset 11.png" alt="">
+    <span class=" text-2xl text-primary font-bold cursor-pointer shadow-md shadow-primary">New Project</span>
+  </div>
+
+
+    <nav class="hidden lg:block">
+      <ul class="list-none flex gap-3" >
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Home</a></li>
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">About</a></li>
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Services</a></li>
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Portfolio</a></li>
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Blog</a></li>
+        <li><a class="font-bold px-3 py-2 hover:text-blue-500 rounded-2xl hover:bg-gray-100  "href="">Contact</a></li>
+      </ul>
+    </nav>
+
+
+     <button class="hidden lg:flex items-center gap-2  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary hover:animate-none ">
+      <img class="animate-pulse  " src="images/asset 1.svg" alt="Icon">
+      <span class="text-blue-600 font-bold">Electron Developer</span>
+      <i class="fa-solid fa-arrow-right "></i>
+    </button>
+
+
+     <button onclick="openMenu()" class="lg:hidden block  ">
+      <i class="fa-solid fa-bars text-white hover:text-gray-100 text-2xl"></i>
+    </button>
+
+  </section>
+
+</header>
+<div id="sidebar"
+ class="fixed top-25 left-0  w-100 h-200 bg-gray-300 
+ transform -translate-x-full transition-transform duration-300 lg:hidden shadow-2xl shadow-gray-400  ">
+
+
+  
+    <div class=" flex justify-end  ">
+      <button onclick="closeMenu()" class="text-3xl text-white hover:text-red-500 top-0 px-2 mx-2 my-2">x</button> </div>
+
+
+  <nav class=" ">
+      <ul class="list-none flex flex-col gap-3 " >
+       
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Home</a></li>
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">About</a></li>
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Services</a></li>
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Portfolio</a></li>
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Blog</a></li>
+        <li><a class="font-bold block px-3 py-2 rounded-2xl hover:text-blue-500 hover:bg-gray-100  "href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+
+    <button class="flex items-center gap-2 my-5  px-4 py-2 border border-gray-400 rounded-2xl hover:bg-gray-100 hover:border-primary hover:text-primary ">
+      <img class=" " src="images/asset 1.svg" alt="Icon">
+      <span class="text-blue-600 font-bold">Electron Developer</span>
+     
+    </button>
+
+</div>
+<!-- Navbar End  -->
+
+
+
+<main>
+
+
+  
+
+
+
+
+</main>
+
+  
+
+  <script src="javascript02.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
