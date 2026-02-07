@@ -1,1 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @import "tailwindcss";
+
+
+
+/* extend: {
+  maxWidth: {
+    container: '1200px'
+  }
+} */
+
+
+@theme {
+  --color-primary: theme(colors.gray.100);
+  --font-family-jost: 'Poppins',sans-serif;
+  --font-family-jost1: 'Inter', sans-serif;
+  --max-width-full_width:auto;
+  --color-secondary: gradient-to-br;
+}
+
+
+/* @layer base {
+  :root {
+    --color-primary: theme(colors.gray.100);
+    --font-family-base: 'Poppins', sans-serif;
+  }
+} */
+
+
+
