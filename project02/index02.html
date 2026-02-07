@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header class="sticky top-0 z-50">
+<header class="sticky top-0 z-50 shadow-lg shadow-gray-400  ">
   <!-- navbar Start -->
   <section class="flex justify-between items-center px-3 bg-gray-200 ">
 
@@ -43,7 +43,7 @@
 
 
      <button onclick="openMenu()" class="lg:hidden block  ">
-      <i class="fa-solid fa-bars text-white hover:text-gray-100 text-2xl"></i>
+      <i class="fa-solid fa-bars hover:-translate-y-1 transition duration-100 text-gray-500 hover:text-white text-2xl"></i>
     </button>
 
   </section>
@@ -53,13 +53,13 @@
   <!-- mobile sidebar section Start -->
 
   <section id="sidebar"
- class="fixed top-24 left-0  w-full h-full bg-gray-300 
- transform -translate-x-full transition-transform duration-300 lg:hidden shadow-2xl shadow-gray-400  ">
+ class="fixed top-24 left--5  w-full h-screen bg-gray-300  rounded-lg
+ transform -translate-x-full transition-transform duration-600 lg:hidden shadow-md shadow-gray-400  ">
 
 
   <!-- sidebar close menu -->
     <div class=" flex justify-end   ">
-      <button onclick="closeMenu()" class="text-3xl px-2 mx-2 my-2 text-gray-100 hover:bg-red-500   hover:-translate-x-1 hover:-translate-y-1 transition duration-600 ">
+      <button onclick="closeMenu()" class="text-3xl px-2 mx-2 my-2 text-gray-100 hover:bg-red-500   hover:-translate-x-1 hover:-translate-y-1 transition duration-500 ">
         <i class="fa-solid fa-xmark"></i>
   </button> 
 </div>
@@ -132,9 +132,31 @@
       <button class="border border-gray-400 px-8 py-3 font-medium font-jost hover:border-gray-900 rounded-lg bg-white hover:-translate-y-1 transition duration-400 hover:bg-green-600 hover:text-white hover:shadow-lg hover:shadow-green-500">Read Docs</button>
     </div>
   </div>
+<!-- companies logo show -->
+<div id="companies-container">
+  
+
+  <!-- companies title -->
+  <div id="companies-titles" class="flex   justify-center gap-2">
+    <img class="translate-y-2" src="./images/asset 2.svg" alt="logo">
+    <span>APPS POWERED BY TODESKTOP</span>
+     <img class="-scale-x-100 translate-y-2 " src="./images/asset 2.svg" alt="logo">
+  </div>
+
+  <!-- companies lines group -->
+
+  <div id="companies-lines-group">
+<div id="companies-line01">
+
+</div>
+  </div>
+
+</div>
 
 
  </div>
+
+ 
 
 </main>
 
